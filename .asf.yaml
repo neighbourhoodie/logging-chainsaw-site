@@ -12,4 +12,5 @@ staging:
 publish:
   profile: ~
   whoami: asf-site
-  subdir: content/chainsaw 
+  subdir: content/chainsaw
+ 
