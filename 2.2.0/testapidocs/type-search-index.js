@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.apache.log4j.chainsaw","l":"LogPanelPreferenceModelTest"},{"p":"org.apache.log4j.xml","l":"XMLDecoderTest"}]
