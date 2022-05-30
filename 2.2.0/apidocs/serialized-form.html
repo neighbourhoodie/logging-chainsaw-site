@@ -587,10 +587,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="org/apache/log4j/chainsaw/ChainsawReceiver.html" title="interface in org.apache.log4j.chainsaw">ChainsawReceiver</a> m_receiver</pre>
 </li>
 <li class="blockList">
-<h4>m_statusBar</h4>
-<pre><a href="org/apache/log4j/chainsaw/ChainsawStatusBar.html" title="class in org.apache.log4j.chainsaw">ChainsawStatusBar</a> m_statusBar</pre>
-</li>
-<li class="blockList">
 <h4>mainToggleToolTips</h4>
 <pre>org.apache.log4j.chainsaw.LogPanel.ToggleToolTips mainToggleToolTips</pre>
 </li>
@@ -870,6 +866,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>m_receivers</h4>
 <pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true" title="class or interface in java.util" class="externalLink">List</a>&lt;<a href="org/apache/log4j/chainsaw/ChainsawReceiver.html" title="interface in org.apache.log4j.chainsaw">ChainsawReceiver</a>&gt; m_receivers</pre>
+</li>
+<li class="blockList">
+<h4>m_zeroConf</h4>
+<pre><a href="org/apache/log4j/chainsaw/zeroconf/ZeroConfPlugin.html" title="class in org.apache.log4j.chainsaw.zeroconf">ZeroConfPlugin</a> m_zeroConf</pre>
 </li>
 <li class="blockList">
 <h4>mainReceiverSplitPane</h4>
@@ -1294,6 +1294,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPanel.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JPanel</a> rulesPanel</pre>
 </li>
 <li class="blockList">
+<h4>rulesTable</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JTable</a> rulesTable</pre>
+</li>
+<li class="blockList">
+<h4>rulesTableModel</h4>
+<pre>org.apache.log4j.chainsaw.color.ColorPanel.RulesTableModel rulesTableModel</pre>
+</li>
+<li class="blockList">
 <h4>searchColumns</h4>
 <pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Vector.html?is-external=true" title="class or interface in java.util" class="externalLink">Vector</a>&lt;<a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true" title="class or interface in java.lang" class="externalLink">String</a>&gt; searchColumns</pre>
 </li>
@@ -1316,14 +1324,6 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockList">
 <h4>statusBar</h4>
 <pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JLabel</a> statusBar</pre>
-</li>
-<li class="blockList">
-<h4>table</h4>
-<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JTable</a> table</pre>
-</li>
-<li class="blockList">
-<h4>tableModel</h4>
-<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html?is-external=true" title="class or interface in javax.swing.table" class="externalLink">DefaultTableModel</a> tableModel</pre>
 </li>
 <li class="blockListLast">
 <h4>tableScrollPane</h4>
@@ -1727,6 +1727,50 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="blockListLast">
 <h4>zeroConfPreferenceModel</h4>
 <pre><a href="org/apache/log4j/chainsaw/zeroconf/ZeroConfPreferenceModel.html" title="class in org.apache.log4j.chainsaw.zeroconf">ZeroConfPreferenceModel</a> zeroConfPreferenceModel</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="blockList"><a id="org.apache.log4j.chainsaw.zeroconf.ZeroConfPlugin">
+<!--   -->
+</a>
+<h3>Class <a href="org/apache/log4j/chainsaw/zeroconf/ZeroConfPlugin.html" title="class in org.apache.log4j.chainsaw.zeroconf">org.apache.log4j.chainsaw.zeroconf.ZeroConfPlugin</a> extends <a href="org/apache/log4j/chainsaw/DockablePanel.html" title="class in org.apache.log4j.chainsaw">DockablePanel</a> implements Serializable</h3>
+<ul class="blockList">
+<li class="blockList">
+<h3>Serialized Fields</h3>
+<ul class="blockList">
+<li class="blockList">
+<h4>connectToMenu</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JMenu</a> connectToMenu</pre>
+</li>
+<li class="blockList">
+<h4>deviceTable</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JTable</a> deviceTable</pre>
+</li>
+<li class="blockList">
+<h4>discoveredDevices</h4>
+<pre><a href="org/apache/log4j/chainsaw/zeroconf/ZeroConfDeviceModel.html" title="class in org.apache.log4j.chainsaw.zeroconf">ZeroConfDeviceModel</a> discoveredDevices</pre>
+</li>
+<li class="blockList">
+<h4>helpItem</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JMenuItem</a> helpItem</pre>
+</li>
+<li class="blockList">
+<h4>jmDNS</h4>
+<pre>javax.jmdns.JmDNS jmDNS</pre>
+</li>
+<li class="blockList">
+<h4>nothingToConnectTo</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenuItem.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JMenuItem</a> nothingToConnectTo</pre>
+</li>
+<li class="blockList">
+<h4>preferenceModel</h4>
+<pre><a href="org/apache/log4j/chainsaw/zeroconf/ZeroConfPreferenceModel.html" title="class in org.apache.log4j.chainsaw.zeroconf">ZeroConfPreferenceModel</a> preferenceModel</pre>
+</li>
+<li class="blockListLast">
+<h4>scrollPane</h4>
+<pre><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html?is-external=true" title="class or interface in javax.swing" class="externalLink">JScrollPane</a> scrollPane</pre>
 </li>
 </ul>
 </li>

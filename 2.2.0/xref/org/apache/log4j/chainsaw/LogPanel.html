@@ -188,19 +188,19 @@
 <a class="jxr_linenumber" name="L180" href="#L180">180</a>     <strong class="jxr_keyword">private</strong> <a href="../../../../org/apache/log4j/chainsaw/LogPanel.html">EventTimeDeltaMatchThumbnail</a> eventTimeDeltaMatchThumbnail;
 <a class="jxr_linenumber" name="L181" href="#L181">181</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">boolean</strong> isDetailPanelVisible;
 <a class="jxr_linenumber" name="L182" href="#L182">182</a>     <strong class="jxr_keyword">private</strong> <a href="../../../../org/apache/log4j/chainsaw/ChainsawReceiver.html">ChainsawReceiver</a> m_receiver;
-<a class="jxr_linenumber" name="L183" href="#L183">183</a>     <strong class="jxr_keyword">private</strong> <a href="../../../../org/apache/log4j/chainsaw/ChainsawStatusBar.html">ChainsawStatusBar</a> m_statusBar;
-<a class="jxr_linenumber" name="L184" href="#L184">184</a> 
-<a class="jxr_linenumber" name="L185" href="#L185">185</a>     <em class="jxr_javadoccomment">/**</em>
-<a class="jxr_linenumber" name="L186" href="#L186">186</a> <em class="jxr_javadoccomment">     * Creates a new LogPanel object.  If a LogPanel with this identifier has</em>
-<a class="jxr_linenumber" name="L187" href="#L187">187</a> <em class="jxr_javadoccomment">     * been loaded previously, reload settings saved on last exit.</em>
-<a class="jxr_linenumber" name="L188" href="#L188">188</a> <em class="jxr_javadoccomment">     *</em>
-<a class="jxr_linenumber" name="L189" href="#L189">189</a> <em class="jxr_javadoccomment">     * @param statusBar  shared status bar, provided by main application</em>
-<a class="jxr_linenumber" name="L190" href="#L190">190</a> <em class="jxr_javadoccomment">     * @param identifier used to load and save settings</em>
-<a class="jxr_linenumber" name="L191" href="#L191">191</a> <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="L192" href="#L192">192</a>     <strong class="jxr_keyword">public</strong> <a href="../../../../org/apache/log4j/chainsaw/LogPanel.html">LogPanel</a>(<strong class="jxr_keyword">final</strong> <a href="../../../../org/apache/log4j/chainsaw/ChainsawStatusBar.html">ChainsawStatusBar</a> statusBar, <strong class="jxr_keyword">final</strong> String identifier, <strong class="jxr_keyword">int</strong> cyclicBufferSize,
-<a class="jxr_linenumber" name="L193" href="#L193">193</a>                     Map&lt;String, RuleColorizer&gt; allColorizers, <strong class="jxr_keyword">final</strong> <a href="../../../../org/apache/log4j/chainsaw/ApplicationPreferenceModel.html">ApplicationPreferenceModel</a> applicationPreferenceModel,
-<a class="jxr_linenumber" name="L194" href="#L194">194</a>                     <a href="../../../../org/apache/log4j/chainsaw/ChainsawStatusBar.html">ChainsawStatusBar</a> sb) {
-<a class="jxr_linenumber" name="L195" href="#L195">195</a>         m_statusBar = sb;
+<a class="jxr_linenumber" name="L183" href="#L183">183</a> 
+<a class="jxr_linenumber" name="L184" href="#L184">184</a>     <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L185" href="#L185">185</a> <em class="jxr_javadoccomment">     * Creates a new LogPanel object.  If a LogPanel with this identifier has</em>
+<a class="jxr_linenumber" name="L186" href="#L186">186</a> <em class="jxr_javadoccomment">     * been loaded previously, reload settings saved on last exit.</em>
+<a class="jxr_linenumber" name="L187" href="#L187">187</a> <em class="jxr_javadoccomment">     *</em>
+<a class="jxr_linenumber" name="L188" href="#L188">188</a> <em class="jxr_javadoccomment">     * @param statusBar  shared status bar, provided by main application</em>
+<a class="jxr_linenumber" name="L189" href="#L189">189</a> <em class="jxr_javadoccomment">     * @param identifier used to load and save settings</em>
+<a class="jxr_linenumber" name="L190" href="#L190">190</a> <em class="jxr_javadoccomment">     */</em>
+<a class="jxr_linenumber" name="L191" href="#L191">191</a>     <strong class="jxr_keyword">public</strong> <a href="../../../../org/apache/log4j/chainsaw/LogPanel.html">LogPanel</a>(<strong class="jxr_keyword">final</strong> <a href="../../../../org/apache/log4j/chainsaw/ChainsawStatusBar.html">ChainsawStatusBar</a> statusBar, 
+<a class="jxr_linenumber" name="L192" href="#L192">192</a>             <strong class="jxr_keyword">final</strong> String identifier,
+<a class="jxr_linenumber" name="L193" href="#L193">193</a>             <strong class="jxr_keyword">int</strong> cyclicBufferSize,
+<a class="jxr_linenumber" name="L194" href="#L194">194</a>                     Map&lt;String, RuleColorizer&gt; allColorizers,
+<a class="jxr_linenumber" name="L195" href="#L195">195</a>                     <strong class="jxr_keyword">final</strong> <a href="../../../../org/apache/log4j/chainsaw/ApplicationPreferenceModel.html">ApplicationPreferenceModel</a> applicationPreferenceModel) {
 <a class="jxr_linenumber" name="L196" href="#L196">196</a>         <strong class="jxr_keyword">this</strong>.identifier = identifier;
 <a class="jxr_linenumber" name="L197" href="#L197">197</a>         <strong class="jxr_keyword">this</strong>.statusBar = statusBar;
 <a class="jxr_linenumber" name="L198" href="#L198">198</a>         <strong class="jxr_keyword">this</strong>.applicationPreferenceModel = applicationPreferenceModel;
@@ -642,7 +642,7 @@
 <a class="jxr_linenumber" name="L634" href="#L634">634</a>                         }
 <a class="jxr_linenumber" name="L635" href="#L635">635</a> 
 <a class="jxr_linenumber" name="L636" href="#L636">636</a>                         <strong class="jxr_keyword">if</strong> (msg != <strong class="jxr_keyword">null</strong> &amp;&amp; wasWarning) {
-<a class="jxr_linenumber" name="L637" href="#L637">637</a>                             m_statusBar.setMessage(msg);
+<a class="jxr_linenumber" name="L637" href="#L637">637</a>                             statusBar.setMessage(msg);
 <a class="jxr_linenumber" name="L638" href="#L638">638</a>                         }
 <a class="jxr_linenumber" name="L639" href="#L639">639</a>                     }
 <a class="jxr_linenumber" name="L640" href="#L640">640</a>                 }
@@ -3048,7 +3048,7 @@
 <a class="jxr_linenumber" name="L3040" href="#L3040">3040</a>         m_receiver = rx;
 <a class="jxr_linenumber" name="L3041" href="#L3041">3041</a>         m_receiver.addPropertyChangeListener(((pce) -&gt; {
 <a class="jxr_linenumber" name="L3042" href="#L3042">3042</a>             <strong class="jxr_keyword">if</strong>( pce.getPropertyName().equals( <span class="jxr_string">"name"</span> ) ){
-<a class="jxr_linenumber" name="L3043" href="#L3043">3043</a>                 <em class="jxr_comment">//this.identifier = pce.getNewValue();</em>
+<a class="jxr_linenumber" name="L3043" href="#L3043">3043</a> <em class="jxr_comment">//                this.identifier = pce.getNewValue();</em>
 <a class="jxr_linenumber" name="L3044" href="#L3044">3044</a>             }
 <a class="jxr_linenumber" name="L3045" href="#L3045">3045</a>         }));
 <a class="jxr_linenumber" name="L3046" href="#L3046">3046</a>         m_receiver.addChainsawEventBatchListener(<strong class="jxr_keyword">this</strong>);
