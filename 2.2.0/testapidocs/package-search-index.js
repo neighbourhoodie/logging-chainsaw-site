@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.apache.log4j"},{"l":"org.apache.log4j.chainsaw"},{"l":"org.apache.log4j.db"},{"l":"org.apache.log4j.xml"}]
