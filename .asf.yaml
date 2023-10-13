@@ -7,7 +7,7 @@ notifications:
 staging:
   profile: ~
   whoami: asf-staging
-  subdir: content/chainsaw 
+  subdir: output/chainsaw
 
 publish:
   profile: ~
